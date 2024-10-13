@@ -1,0 +1,32 @@
+body{
+    background-color: #967676a9;
+   
+}       
+.box {
+    /* background-color: rgb(10, 10, 10); */
+    height:300px;
+    width: 300px;
+    margin: 50px;
+    border-radius: 5px;
+    animation: move;
+    animation-duration: 3s;
+    animation-delay: 0.1;
+    animation-fill-mode:forwards;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+    animation-timing-function: linear;
+    
+}
+@keyframes move {
+    0% {
+        left:0;
+        border-radius: 35%;
+        rotate:360deg;
+    }
+    100%{
+        left:80%;
+        border-radius: 50%;
+        background-color: blueviolet;
+    
+    }
+}
